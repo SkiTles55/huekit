@@ -253,9 +253,7 @@ open class ColorBarPicker: UIControl {
 	open override var accessibilityTraits: UIAccessibilityTraits {
 		get {
 			var t = super.accessibilityTraits
-			
-			t |= UIAccessibilityTraitAdjustable
-			
+            t.insert(.adjustable)
 			return t
 		}
 		set {
